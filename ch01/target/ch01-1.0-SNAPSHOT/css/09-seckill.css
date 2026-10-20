@@ -1,0 +1,35 @@
+/* 页面整体：白底、居中、其他留白 */
+body {
+  margin: 0;
+  padding: 60px 20px;
+  background: #fff;
+  color: #222;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  text-align: center;
+}
+
+/* 小图片 */
+.pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* 标题 */
+h1 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* 倒计时：天 时 分 秒 */
+#timer {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+#timer span {
+  color: #e02020;
+  font-weight: 700;
+}

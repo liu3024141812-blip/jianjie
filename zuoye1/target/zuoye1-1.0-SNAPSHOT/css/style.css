@@ -1,0 +1,250 @@
+/* ===== 全局重置 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #F5F7FA;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== 配色变量 ===== */
+:root {
+    --主色: #4A90E2;
+    --主色浅: #6BA7E8;
+    --主色深: #3A7BC8;
+    --背景色: #F5F7FA;
+    --卡片色: #FFFFFF;
+    --文字色: #333333;
+    --文字浅: #888888;
+    --圆角: 10px;
+    --阴影: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --阴影悬停: 0 8px 20px rgba(74, 144, 226, 0.25);
+}
+
+/* ===== 顶部标题区 ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: var(--主色);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: var(--文字浅);
+}
+
+/* ===== 卡片区 ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 40px 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--卡片色);
+    border-radius: var(--圆角);
+    box-shadow: var(--阴影);
+    width: 260px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--阴影悬停);
+}
+
+/* 头像占位（圆形） */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--主色浅);
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card .role {
+    font-size: 14px;
+    color: var(--主色);
+    margin-bottom: 16px;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 8px 24px;
+    background: var(--主色);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.card .btn:hover {
+    background: var(--主色深);
+}
+
+/* ===== 项目信息条 ===== */
+.info-bar {
+    text-align: center;
+    padding: 18px;
+    background: #EAF2FC;
+    color: var(--主色深);
+    font-size: 15px;
+}
+
+.info-bar span {
+    margin: 0 20px;
+}
+
+/* ===== 页脚 ===== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--文字浅);
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* ===== 子页面：顶部导航 ===== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.nav a {
+    color: var(--主色);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav .nav-title {
+    color: var(--文字浅);
+    font-size: 14px;
+}
+
+/* ===== 子页面：内容区 ===== */
+.profile {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: var(--圆角);
+    box-shadow: var(--阴影);
+    flex-wrap: wrap;
+}
+
+.profile .avatar {
+    width: 140px;
+    height: 140px;
+    font-size: 48px;
+    margin: 0;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 240px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.profile-info .role {
+    color: var(--主色);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.profile-info .divider {
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+.profile-info dl {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.profile-info dt {
+    color: var(--文字浅);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.profile-info dd {
+    color: var(--文字色);
+}
+
+/* ===== 子页面：上下切换 ===== */
+.switch {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+}
+
+.switch a {
+    color: var(--主色);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 700px) {
+    .hero h1 { font-size: 26px; }
+    .cards { padding: 20px; }
+    .card { width: 100%; max-width: 320px; }
+    .profile { flex-direction: column; align-items: center; text-align: center; }
+    .nav { padding: 14px 20px; }
+    .info-bar span { display: block; margin: 6px 0; }
+}
