@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册2</title>
+</head>
+<body>
+<h2 style="text-align: center;">注册页面</h2>
+<!--
+http://127.0.0.1:8848/web3434/regist.html?username=3024141812&password=123456&sex=0&hobby=1%22%22&hobby=3%22%22&pub=1&submit_but=%E6%8F%90%E4%BA%A4#
+-->
+<form action="regist.jsp" method="post">
+    <table style="margin: 0 auto;border: 1px">
+
+
+
+        用户名:<input type="text" name="username"/> <br/></td>
+        密码:<input type="password" name="password"/> <br/></td>
+        性别:
+        <input type="radio" name="sex" value="0"/>男
+        <input type="radio" name="sex" value="1"/>女 <br/>
+        兴趣爱好:
+        <input type="checkbox" name="hobby" value="0" />AI
+        <input type="checkbox" name="hobby" value="1" />听音乐
+        <input type="checkbox" name="hobby" value="2" />打篮球
+        <input type="checkbox" name="hobby" value="3" />玩手机
+        <input type="checkbox" name="hobby" value="4" />健身 <br/>
+        专业:
+        <select name="pub" >
+            <option value="1"> 计算机科学与技术 </option>
+            <option value="2"> 软件工程 </option>
+            <option value="3"> 网络工程 </option>
+        </select> <br />
+        <!-- -->
+        头像:
+        <input type="file" name="photo"/>
+        <br/>
+        个人简介:
+        <br/>
+        <input type="submit" value="注册" name="submit_but"/>
+        <input type="reset" value="取消" name="reset_but"/>
+        <input type="button" value="验证" name="but1" onclick="window.alert('验证密码')"/>
+        <input type="button" value="删除" name="but2" onclick="window.alert('删除密码')"/>
+    </table>
+
+
+</form>
+</body>
+</html>

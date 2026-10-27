@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ch01" />
         <module name="ch02" />
-        <module name="zuoye1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zuoye1" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

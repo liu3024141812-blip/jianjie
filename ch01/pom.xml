@@ -37,6 +37,13 @@
         <scope>test</scope>
       </dependency>
 
+      <!-- MySQL 驱动：默认 compile 作用域，会被打进 WEB-INF/lib -->
+      <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
+        <version>8.0.31</version>
+      </dependency>
+
 
 
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登录页面</title>
+</head>
+<body>
+<h2 style="text-align: center;">登录页面</h2>
+<!--
+http://127.0.0.1:8848/web3434/regist.html?username=3024141812&password=123456&sex=0&hobby=1%22%22&hobby=3%22%22&pub=1&submit_but=%E6%8F%90%E4%BA%A4#
+-->
+<form action="LoginServlet" method="post">
+    <table style="margin: 0 auto;border: 1px">
+
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username" /></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="注册" name="submit_but" />
+                <input type="button" value="验证" name="but1" onclick="window.alert('验证密码')" />
+                <input type="button" value="删除" name="but2" onclick="window.alert('删除密码')" />
+            </td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
